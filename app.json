@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Orbit Pay",
+    "slug": "orbit-pay",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.orbitpay.hrushi",
+      "infoPlist": {
+        "NSSupportsLiveActivities": true
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Orbit Pay uses the camera to scan payment QR codes."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Orbit Pay uses a photo you pick as the background behind the payment flow."
+        }
+      ],
+      "@bacons/apple-targets"
+    ]
+  }
+}
